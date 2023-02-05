@@ -1,0 +1,10 @@
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.DAL\bin\Debug\netstandard2.1\OnlineShop.DAL.deps.json
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.DAL\bin\Debug\netstandard2.1\OnlineShop.DAL.dll
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.DAL\bin\Debug\netstandard2.1\OnlineShop.DAL.pdb
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.DAL\obj\Debug\netstandard2.1\OnlineShop.DAL.csproj.AssemblyReference.cache
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.DAL\obj\Debug\netstandard2.1\OnlineShop.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.DAL\obj\Debug\netstandard2.1\OnlineShop.DAL.AssemblyInfoInputs.cache
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.DAL\obj\Debug\netstandard2.1\OnlineShop.DAL.AssemblyInfo.cs
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.DAL\obj\Debug\netstandard2.1\OnlineShop.DAL.csproj.CoreCompileInputs.cache
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.DAL\obj\Debug\netstandard2.1\OnlineShop.DAL.dll
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.DAL\obj\Debug\netstandard2.1\OnlineShop.DAL.pdb
