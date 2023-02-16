@@ -21,7 +21,7 @@ namespace OnlineShop.Web.Controllers
                     Address = "SomePlace In Neverland",
                     City = "Neverland",
                     Region = "Este",
-                    PostalCode = 22000,
+                    PostalCode = "22000",
                     Country = "EveryWhere",
                     Phone = "809-123-1234",
                     Fax = "Uncanny@gmail.com"
