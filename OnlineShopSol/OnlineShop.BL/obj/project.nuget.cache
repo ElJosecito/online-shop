@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "3Z8lhGLeYPez4UIaBwsbUa035DbKvJmUxqMQwAymJRSaXy4c+3RBES/DYLngMoHMt8WcwAx9mP4BrZrJw4JpFQ==",
+=======
+  "dgSpecHash": "uGZd7y0eNRIj6VvFYzTzXoyYYsqP3Nii36G1jFW2JLW3jajdS/fXNwTaDVHh8LVZHqjuR0Ie5c5ak6AWWIlNMw==",
+>>>>>>> Arnold-Categories
   "success": true,
   "projectFilePath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.BL\\OnlineShop.BL.csproj",
   "expectedPackageFiles": [],
