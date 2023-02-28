@@ -1,8 +1,40 @@
 {
   "version": 2,
-  "dgSpecHash": "zINSY9Bn8ys7ZRNNxDWxtilw4pdG4CUBdLjiojDslXi4S0qbbKzEQWrHtZwtSYQXwX1+FEERdJpQsa3tKz4Fsg==",
+  "dgSpecHash": "pZW/ljOHXtMYgAZvn0oFuQq+MAZVwf9DFd4IQiXcsylhtQlpbW1fbWSClY8XB78D4G0viSLB2NAz3LR+2cki8g==",
   "success": true,
   "projectFilePath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.32\\microsoft.entityframeworkcore.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.32\\microsoft.entityframeworkcore.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.32\\microsoft.entityframeworkcore.analyzers.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.32\\microsoft.extensions.caching.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.32\\microsoft.extensions.caching.memory.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.32\\microsoft.extensions.configuration.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.32\\microsoft.extensions.configuration.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.32\\microsoft.extensions.configuration.binder.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.32\\microsoft.extensions.dependencyinjection.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.32\\microsoft.extensions.dependencyinjection.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.logging\\3.1.32\\microsoft.extensions.logging.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.32\\microsoft.extensions.logging.abstractions.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.options\\3.1.32\\microsoft.extensions.options.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.32\\microsoft.extensions.primitives.3.1.32.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+    "C:\\Users\\iblxs\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
