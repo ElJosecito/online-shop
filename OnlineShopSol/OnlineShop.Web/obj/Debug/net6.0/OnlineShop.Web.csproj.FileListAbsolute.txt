@@ -14,11 +14,6 @@ C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\OnlineShop.
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\OnlineShop.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\OnlineShop.Web.RazorAssemblyInfo.cache
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\OnlineShop.Web.RazorAssemblyInfo.cs
-C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets\msbuild.OnlineShop.Web.Microsoft.AspNetCore.StaticWebAssets.props
-C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.OnlineShop.Web.props
-C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.OnlineShop.Web.props
-C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.OnlineShop.Web.props
-C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets.pack.json
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets.build.json
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets.development.json
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
@@ -245,3 +240,11 @@ C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\bin\Debug\net6.0\runtimes\wi
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\OnlineShop.Web.csproj.CopyComplete
+<<<<<<< HEAD
+=======
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets\msbuild.OnlineShop.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.OnlineShop.Web.props
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.OnlineShop.Web.props
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.OnlineShop.Web.props
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Web\obj\Debug\net6.0\staticwebassets.pack.json
+>>>>>>> 29b6fc17b0203c2669673afb10f4b95c329d334a

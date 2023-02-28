@@ -1,7 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
 using System.Collections.Generic;
 using OnlineShop.Web.Models;
+=======
+using OnlineShop.Web.Models;
+using System.Collections.Generic;
+>>>>>>> 29b6fc17b0203c2669673afb10f4b95c329d334a
 
 namespace OnlineShop.Web.Controllers
 {
@@ -14,6 +19,7 @@ namespace OnlineShop.Web.Controllers
             {
                 new SuppliersModel()
                 {
+<<<<<<< HEAD
                     SupplierId = 1,
                     CompanyName = "Uncanny",
                     ContactName = "Jose Miguel",
@@ -27,6 +33,20 @@ namespace OnlineShop.Web.Controllers
                     Fax = "ReallyKul@uncanny.com",
                     CreationDate = DateTime.Now
                 },
+=======
+                    SupplierID = 1,
+                    CompanyName = "Uncanny",
+                    ContactName = "Jose",
+                    ContactTitle = "Lider",
+                    Address = "SomePlace In Neverland",
+                    City = "Neverland",
+                    Region = "Este",
+                    PostalCode = "22000",
+                    Country = "EveryWhere",
+                    Phone = "809-123-1234",
+                    Fax = "Uncanny@gmail.com"
+                }
+>>>>>>> 29b6fc17b0203c2669673afb10f4b95c329d334a
             };
 
             return View(suppliers);
