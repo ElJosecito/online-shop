@@ -4,9 +4,9 @@ using System.Text;
 
 namespace OnlineShop.DAL.Exceptions
 {
-    internal class SuppliersException : Exception
+    internal class ISuppliersException : Exception
     {
-        public SuppliersException(string message) : base(message) 
+        public ISuppliersException(string message) : base(message) 
         {
             //Logica de excepcion
             //Y se envia por correo

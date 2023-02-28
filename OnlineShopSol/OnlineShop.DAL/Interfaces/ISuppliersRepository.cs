@@ -9,8 +9,8 @@ namespace OnlineShop.DAL.Interfaces
     {
         void Add(Suppliers suppliers);
         void Update(Suppliers suppliers);
-        List<Suppliers> GetAll();
-        Suppliers GetById(int idSuppliers);
+        List<Suppliers> GetEntities();
+        Suppliers GetEntity(int idSuppliers);
         void Delete(Suppliers suppliers);
 
     }
