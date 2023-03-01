@@ -12,5 +12,7 @@ namespace OnlineShop.DAL.Context
         }
 
         public DbSet<Suppliers> Suppliers { get; set; }
+
+        public DbSet<Production> Production { get; set; }
     }
 }

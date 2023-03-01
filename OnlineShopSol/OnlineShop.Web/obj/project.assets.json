@@ -9056,8 +9056,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\iblxs\\.nuget\\packages\\": {},
-    "E:\\Visual Studio\\NuGetPackages": {}
+    "C:\\Users\\franc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -9065,15 +9064,11 @@
       "projectUniqueName": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Web\\OnlineShop.Web.csproj",
       "projectName": "OnlineShop.Web",
       "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Web\\OnlineShop.Web.csproj",
-      "packagesPath": "C:\\Users\\iblxs\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
       "outputPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Web\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "E:\\Visual Studio\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\iblxs\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9081,7 +9076,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9124,16 +9118,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Web\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

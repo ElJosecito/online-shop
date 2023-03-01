@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Z8lhGLeYPez4UIaBwsbUa035DbKvJmUxqMQwAymJRSaXy4c+3RBES/DYLngMoHMt8WcwAx9mP4BrZrJw4JpFQ==",
+  "dgSpecHash": "u8FXQ7e8BRzjacYfHJviCMea6HiXNpdrVQDeRmyAB2Pmba26Y/8qdN9e9tRz6Z2XEYtSi8UD2D3awkY0IAQxWw==",
   "success": true,
   "projectFilePath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.BL\\OnlineShop.BL.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.BL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
