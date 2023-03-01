@@ -9,26 +9,24 @@ namespace OnlineShop.Api.Controllers
         [ApiController]
         public class SuppliersController : ControllerBase
         {
-            private readonly ISuppliersRepository _suppliersRepositories;
+            private readonly ISuppliersRepository _suppliersRepository;
 
             public SuppliersController(ISuppliersRepository suppliersRepository)
             {
-                _suppliersRepositories = suppliersRepository;
+                _suppliersRepository = suppliersRepository;
             }
             // GET: api/<DepartmentController>
             [HttpGet]
-            public IActionResult Get()
+            public IEnumerable<Suppliers>Get()
             {
-                var suppliers = _suppliersRepositories.GetEntities();
-                return Ok(suppliers);
+                return _suppliersRepository.GetAll();
             }
 
             // GET api/<DepartmentController>/5
             [HttpGet("{id}")]
             public IActionResult Get(int id)
             {
-                var suppliers = _suppliersRepositories.GetEntity(id);
-
+                var suppliers = _suppliersRepository.GetEntity(id);
                 return Ok(suppliers);
             }
 
@@ -36,7 +34,7 @@ namespace OnlineShop.Api.Controllers
             [HttpPost("SaveSuppliers")]
             public IActionResult Post([FromBody] Suppliers suppliers)
             {
-                _suppliersRepositories.Add(suppliers);
+                _suppliersRepository.Add(suppliers);
                 return Ok();
             }
 
@@ -44,7 +42,7 @@ namespace OnlineShop.Api.Controllers
             [HttpPost("UpdateSuppliers")]
             public IActionResult Put([FromBody] Suppliers suppliers)
             {
-                _suppliersRepositories.Update(suppliers);
+                _suppliersRepository.Update(suppliers);
                 return Ok();
             }
 
@@ -52,7 +50,7 @@ namespace OnlineShop.Api.Controllers
             [HttpPost("RemoveSuppliers")]
             public IActionResult Remove([FromBody] Suppliers suppliers)
             {
-                _suppliersRepositories.Delete(suppliers);
+                _suppliersRepository.Delete(suppliers);
                 return Ok();
             }
         }

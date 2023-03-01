@@ -1,6 +1,4 @@
-﻿
-
-using Microsoft.EntityFrameworkCore.Internal;
+﻿using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Logging;
 using OnlineShop.DAL.Context;
 using OnlineShop.DAL.Entities;
@@ -11,11 +9,11 @@ using System.Linq;
 
 namespace OnlineShop.DAL.Repositories
 {
-    public class SuppliersRepositories : ISuppliersRepository
+    public class SuppliersRepository : ISuppliersRepository
     {
         private readonly  ShopContext context;
-        private readonly ILogger<SuppliersRepositories> logger;
-        public SuppliersRepositories(ShopContext context, ILogger<SuppliersRepositories> Logger) 
+        private readonly ILogger<SuppliersRepository> logger;
+        public SuppliersRepository(ShopContext context, ILogger<SuppliersRepository> Logger) 
         {
             this.context = context;
             this.logger = Logger;
@@ -45,7 +43,23 @@ namespace OnlineShop.DAL.Repositories
 
         public List<Suppliers> GetAll()
         {
-            throw new System.NotImplementedException();
+            return new List<Suppliers>()
+            {
+                 new Suppliers()
+                {
+                    SupplierId = 1,
+                    CompanyName = "Uncanny",
+                    ContactName = "Jose",
+                    ContactTitle = "Lider",
+                    Address = "SomePlace In Neverland",
+                    City = "Neverland",
+                    Region = "Este",
+                    PostalCode = "22000",
+                    Country = "EveryWhere",
+                    Phone = "809-123-1234",
+                    Fax = "Uncanny@gmail.com"
+                }
+            };
         }
 
         public Suppliers GetById(int idSuppliers)
@@ -53,10 +67,6 @@ namespace OnlineShop.DAL.Repositories
             throw new System.NotImplementedException();
         }
 
-        public List<Suppliers> GetEntities()
-        {
-            throw new System.NotImplementedException();
-        }
 
         public Suppliers GetEntity(int idSuppliers)
         {

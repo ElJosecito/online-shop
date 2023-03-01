@@ -34,7 +34,7 @@ namespace OnlineShop.Api
             services.AddDbContext<ShopContext>(options => options.UseSqlServer(this.Configuration.GetConnectionString("ShopContext")));
 
             //Repositories
-            services.AddTransient<ISuppliersRepository, SuppliersRepositories>();
+            services.AddTransient<ISuppliersRepository, SuppliersRepository>();
 
 
             //App Services
