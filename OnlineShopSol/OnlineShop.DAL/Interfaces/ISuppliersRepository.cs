@@ -1,4 +1,5 @@
 ﻿using OnlineShop.DAL.Entities;
+using OnlineShop.DAL.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,8 +10,8 @@ namespace OnlineShop.DAL.Interfaces
     {
         void Add(Suppliers suppliers);
         void Update(Suppliers suppliers);
-        List<Suppliers> GetEntities();
-        Suppliers GetEntity(int idSuppliers);
+        List<SuppliersModel> GetAll();
+        Suppliers Get(int idSuppliers);
         void Delete(Suppliers suppliers);
 
     }

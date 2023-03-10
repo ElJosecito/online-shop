@@ -1,60 +1,51 @@
-﻿using OnlineShop.DAL.Entities;
+﻿using Microsoft.AspNetCore.Mvc;
 using OnlineShop.DAL.Interfaces;
-using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
+using OnlineShop.DAL.Model;
+
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace OnlineShop.Api.Controllers
 {
-        [Route("api/[controller]")]
-        [ApiController]
-        public class SuppliersController : ControllerBase
+    [Route("api/[controller]")]
+    [ApiController]
+    public class SuppliersController : ControllerBase
+    {
+        private readonly ISuppliersRepository suppliersRepository;
+        public SuppliersController(ISuppliersRepository suppliersRepository)
         {
-            private readonly ISuppliersRepository _suppliersRepositories;
-
-            public SuppliersController(ISuppliersRepository suppliersRepository)
-            {
-                _suppliersRepositories = suppliersRepository;
-            }
-            // GET: api/<DepartmentController>
-            [HttpGet]
-            public IActionResult Get()
-            {
-                var suppliers = _suppliersRepositories.GetEntities();
-                return Ok(suppliers);
-            }
-
-            // GET api/<DepartmentController>/5
-            [HttpGet("{id}")]
-            public IActionResult Get(int id)
-            {
-                var suppliers = _suppliersRepositories.GetEntity(id);
-
-                return Ok(suppliers);
-            }
-
-            // POST api/<DepartmentController>
-            [HttpPost("SaveSuppliers")]
-            public IActionResult Post([FromBody] Suppliers suppliers)
-            {
-                _suppliersRepositories.Add(suppliers);
-                return Ok();
-            }
-
-            // POST api/<DepartmentController>
-            [HttpPost("UpdateSuppliers")]
-            public IActionResult Put([FromBody] Suppliers suppliers)
-            {
-                _suppliersRepositories.Update(suppliers);
-                return Ok();
-            }
-
-
-            [HttpPost("RemoveSuppliers")]
-            public IActionResult Remove([FromBody] Suppliers suppliers)
-            {
-                _suppliersRepositories.Delete(suppliers);
-                return Ok();
-            }
+            this.suppliersRepository = suppliersRepository;
         }
-}
 
+        // GET: api/<SuppliersController>
+        [HttpGet]
+        public IEnumerable<SuppliersModel> Get()
+        {
+            return this.suppliersRepository.GetAll();
+        }
+
+        // GET api/<SuppliersController>/5
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            return "value";
+        }
+
+        // POST api/<SuppliersController>
+        [HttpPost]
+        public void Post([FromBody] string value)
+        {
+        }
+
+        // PUT api/<SuppliersController>/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string value)
+        {
+        }
+
+        // DELETE api/<SuppliersController>/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+        }
+    }
+}
