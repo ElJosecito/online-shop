@@ -1,8 +1,10 @@
 ﻿
 
+using OnlineShop.DAL.Core;
+
 namespace OnlineShop.DAL.Entities
 {
-    public class Suppliers
+    public class Suppliers : BaseEntity
     {
         public int SupplierId { get; set; }
         public string CompanyName { get; set; }

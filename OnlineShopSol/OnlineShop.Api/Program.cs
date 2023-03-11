@@ -1,9 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using OnlineShop.DAL.Context;
 using OnlineShop.DAL.Interfaces;
 using OnlineShop.DAL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<ShopContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ShopContext")));
+
 
 builder.Services.AddControllers();
 builder.Services.AddTransient<ISuppliersRepository, SuppliersRepository>();
