@@ -11,8 +11,9 @@ namespace OnlineShop.DAL.Interfaces
         void Add(Suppliers suppliers);
         void Update(Suppliers suppliers);
         List<SuppliersModel> GetAll();
-        Suppliers Get(int idSuppliers);
+        Suppliers Get(int SuppliersId);
         void Delete(Suppliers suppliers);
+        bool Exists(string CompanyName);
 
     }
 }

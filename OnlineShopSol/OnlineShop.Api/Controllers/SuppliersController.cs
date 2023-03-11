@@ -10,17 +10,17 @@ namespace OnlineShop.Api.Controllers
     [ApiController]
     public class SuppliersController : ControllerBase
     {
-        private readonly ISuppliersRepository suppliersRepository;
+        private readonly ISuppliersRepository _suppliersRepository;
         public SuppliersController(ISuppliersRepository suppliersRepository)
         {
-            this.suppliersRepository = suppliersRepository;
+            _suppliersRepository = suppliersRepository;
         }
 
         // GET: api/<SuppliersController>
         [HttpGet]
         public IEnumerable<SuppliersModel> Get()
         {
-            return this.suppliersRepository.GetAll();
+            return _suppliersRepository.GetAll();
         }
 
         // GET api/<SuppliersController>/5
