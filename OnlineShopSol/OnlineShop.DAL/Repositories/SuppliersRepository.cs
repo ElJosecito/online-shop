@@ -111,22 +111,22 @@ namespace OnlineShop.DAL.Repositories
         List<SuppliersModel> ISuppliersRepository.GetAll()
         {
 
-            var suppliers = _shopContext.Suppliers.Select(cd => new SuppliersModel()
-            {
-                SupplierId = cd.SupplierId,
-                CompanyName = cd.CompanyName,
-                ContactName = cd.ContactName,
-                ContactTitle = cd.ContactTitle,
-                Address = cd.Address,
-                City = cd.City,
-                Region = cd.Region,
-                PostalCode = cd.PostalCode,
-                Country = cd.Country,
-                Phone = cd.Phone,
-                Fax = cd.Fax
-            }).ToList();
+                var suppliers = _shopContext.Suppliers.Select(cd => new SuppliersModel()
+                {
+                    SupplierId = cd.SupplierId,
+                    CompanyName = cd.CompanyName,
+                    ContactName = cd.ContactName,
+                    ContactTitle = cd.ContactTitle,
+                    Address = cd.Address,
+                    City = cd.City,
+                    Region = cd.Region,
+                    PostalCode = cd.PostalCode,
+                    Country = cd.Country,
+                    Phone = cd.Phone,
+                    Fax = cd.Fax
+                }).ToList();
 
-            return suppliers;
+                return suppliers;
 
         }
         bool ISuppliersRepository.Exists(string CompanyName)
