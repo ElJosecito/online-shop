@@ -8,7 +8,7 @@ namespace OnlineShop.DAL.Interfaces
 {
     public interface ISuppliersRepository
     {
-        void Add(Suppliers suppliers);
+        void Save(Suppliers suppliers);
         void Update(Suppliers suppliers);
         List<SuppliersModel> GetAll();
         Suppliers Get(int SuppliersId);
