@@ -24,7 +24,7 @@ namespace OnlineShop.DAL.Repositories
             _logger = logger;
         }
 
-        public void Add(Suppliers suppliers)
+        public void Save(Suppliers suppliers)
         {
             try
             {
@@ -47,6 +47,7 @@ namespace OnlineShop.DAL.Repositories
                 };
 
                 _shopContext.Suppliers.Add(suppliersToAdd);
+                _shopContext.SaveChanges();
             }
             catch (Exception ex)
             {
@@ -66,6 +67,8 @@ namespace OnlineShop.DAL.Repositories
                 suppliersToRemove.Delete_User = suppliers.Delete_User;
 
                 _shopContext.Suppliers.Remove(suppliersToRemove);
+                _shopContext.SaveChanges();
+
             }
             catch (Exception ex)
             {
@@ -101,6 +104,8 @@ namespace OnlineShop.DAL.Repositories
                 suppliersToUpdate.Delete_User = suppliers.Delete_User;
 
                 _shopContext.Suppliers.Update(suppliersToUpdate);
+                _shopContext.SaveChanges();
+
             }
             catch (Exception ex)
             {
