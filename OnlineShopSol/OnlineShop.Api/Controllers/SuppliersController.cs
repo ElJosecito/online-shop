@@ -18,16 +18,19 @@ namespace OnlineShop.Api.Controllers
 
         // GET: api/<SuppliersController>
         [HttpGet]
-        public IEnumerable<SuppliersModel> Get()
+        public IActionResult Get()
         {
-            return _suppliersRepository.GetAll();
+            var suppliers = _suppliersRepository.GetAll();
+
+            return Ok(suppliers);
         }
 
         // GET api/<SuppliersController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(int id)
         {
-            return "value";
+            var supplier = _suppliersRepository.Get(id);
+            return Ok(supplier);
         }
 
         // POST api/<SuppliersController>

@@ -41,8 +41,8 @@ namespace OnlineShop.DAL.Repositories
                     Country = suppliers.Country,
                     Phone = suppliers.Phone,
                     Fax = suppliers.Fax,
-                    CreationUser = suppliers.CreationUser,
-                    CreationDate = DateTime.Now,
+                    Creation_User = suppliers.Creation_User,
+                    Creation_Date = DateTime.Now,
 
                 };
 
@@ -61,9 +61,9 @@ namespace OnlineShop.DAL.Repositories
             {
                 Suppliers suppliersToRemove = Get(suppliers.SupplierId);
 
-                suppliersToRemove.DeleteDate = DateTime.Now;
+                suppliersToRemove.Delete_Date = DateTime.Now;
                 suppliersToRemove.Deleted = true;
-                suppliersToRemove.DeleteUser = suppliers.DeleteUser;
+                suppliersToRemove.Delete_User = suppliers.Delete_User;
 
                 _shopContext.Suppliers.Remove(suppliersToRemove);
             }
@@ -97,8 +97,8 @@ namespace OnlineShop.DAL.Repositories
                 suppliersToUpdate.Phone = suppliers.Phone;
                 suppliersToUpdate.Fax = suppliers.Fax;
 
-                suppliersToUpdate.ModifyDate = DateTime.Now;
-                suppliersToUpdate.ModifyUser = suppliers.ModifyUser;
+                suppliersToUpdate.Modify_Date = DateTime.Now;
+                suppliersToUpdate.Delete_User = suppliers.Delete_User;
 
                 _shopContext.Suppliers.Update(suppliersToUpdate);
             }
