@@ -5,26 +5,24 @@ using Microsoft.Extensions.Logging;
 using OnlineShop.DAL.Context;
 using OnlineShop.DAL.Entities;
 using OnlineShop.DAL.Interfaces;
-using OnlineShop.DAL.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+
+
 
 namespace OnlineShop.DAL.Repositories
 {
-    public class SuppliersRepository : ISuppliersRepository
-    {
+    public class SuppliersRepository : Core.RepositoryBase<Suppliers>, ISuppliersRepository 
+    { 
+
         private readonly ShopContext _shopContext;
+        private readonly ILogger<SuppliersRepository> _logger;
 
-        public ILogger<SuppliersRepository> _logger { get; }
-
-        public SuppliersRepository(ShopContext shopContext, ILogger<SuppliersRepository> logger)
+    public SuppliersRepository(ShopContext shopContext, ILogger<SuppliersRepository> logger): base(shopContext)
         {
             _shopContext = shopContext;
             _logger = logger;
         }
 
-        public void Save(Suppliers suppliers)
+       /* public void Save(Suppliers suppliers)
         {
             try
             {
@@ -137,6 +135,6 @@ namespace OnlineShop.DAL.Repositories
         bool ISuppliersRepository.Exists(string CompanyName)
         {
             return this._shopContext.Suppliers.Any(cd => cd.CompanyName == CompanyName);
-        }
+        }*/
     }
 }
