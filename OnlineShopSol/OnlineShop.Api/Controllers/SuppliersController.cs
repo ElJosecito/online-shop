@@ -21,14 +21,14 @@ namespace OnlineShop.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var suppliers = _suppliersRepository.GetAll();
+            var suppliers = _suppliersRepository.GetEntities();
 
             return Ok(suppliers);
         }
 
         // GET api/<SuppliersController>/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public IActionResult GetEntity(int id)
         {
             var supplier = _suppliersRepository.Get(id);
             return Ok(supplier);
