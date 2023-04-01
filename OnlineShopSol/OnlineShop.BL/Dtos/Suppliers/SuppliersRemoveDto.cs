@@ -4,7 +4,12 @@ using System.Text;
 
 namespace OnlineShop.BL.Dtos.Suppliers
 {
-    internal class SuppliersRemoveDto
+    public class SuppliersRemoveDto
     {
+        public int SupplierId { get; set; }
+
+        public int? Delete_User { get; set; }
+        public DateTime? Delete_Date { get; set; }
+        public bool Deleted { get; set; }
     }
 }

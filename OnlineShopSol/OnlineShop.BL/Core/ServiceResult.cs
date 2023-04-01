@@ -4,7 +4,15 @@ using System.Text;
 
 namespace OnlineShop.BL.Core
 {
-    internal class ServiceResult
+    public class ServiceResult
     {
+        public ServiceResult() 
+        {
+            this.Success = true;
+        }
+        public bool Success { get; set; }
+        public dynamic Data { get; set; }
+        public string Message { get; set; }
+
     }
 }

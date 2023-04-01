@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using OnlineShop.BL.Core;
 
 namespace OnlineShop.BL.Responses
 {
-    internal class SuppliersResponse
+    public class SuppliersResponse : ServiceResult
     {
+        public int SuppliersId { get; set; }
     }
 }

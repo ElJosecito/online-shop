@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OnlineShop.DAL.Exceptions
 {
-    internal class ISuppliersException : Exception
+    public class ISuppliersException : Exception
     {
         public ISuppliersException(string message) : base(message) 
         {
