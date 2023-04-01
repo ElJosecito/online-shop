@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OnlineShop.BL.Contract;
+using OnlineShop.BL.Dtos.Suppliers;
 using OnlineShop.DAL.Entities;
 using OnlineShop.DAL.Interfaces;
 using OnlineShop.DAL.Model;
@@ -40,29 +41,41 @@ namespace OnlineShop.Api.Controllers
         }
 
         // POST api/<SuppliersController>
-        /*[HttpPost("SaveSuppliers")]
-        public IActionResult Post([FromBody] Suppliers suppliers)
+        [HttpPost("SaveSuppliers")]
+        public IActionResult Post([FromBody] SuppliersSaveDto suppliersSaveDto)
         {
-            this.supplierService.SaveSupplier();
-            return Ok();
-        }*/
+            var result = this.supplierService.SaveSupplier(suppliersSaveDto);
+
+            if (result.Success)
+                return Ok(result);
+            else
+                return BadRequest(result);
+        }
 
         // PUT api/<SuppliersController>/5
-        /*[HttpPut("UpdateSuppliers")]
-        public IActionResult Put([FromBody] Suppliers suppliers)
+        [HttpPut("UpdateSuppliers")]
+        public IActionResult Put([FromBody] SuppliersUpdateDto suppliersUpdateDto)
         {
-            this.supplierService.UpdateSupplier(suppliers);
-            return Ok();
-        }*/
+            var result = this.supplierService.UpdateSupplier(suppliersUpdateDto);
+
+            if (result.Success)
+                return Ok(result);
+            else
+                return BadRequest(result);
+        }
 
 
         // DELETE api/<SuppliersController>/5
-        /*[HttpPost("DeleteSuppliers")]
-        public IActionResult RemoveSupplier([FromBody] Suppliers suppliers)
+        [HttpPost("DeleteSuppliers")]
+        public IActionResult RemoveSupplier([FromBody] SuppliersRemoveDto suppliersRemoveDto)
         {
-            this.supplierService.DeleteSuppliers(suppliers);
-            return Ok();
-        }*/
+            var result = this.supplierService.DeleteSuppliers(suppliersRemoveDto);
+
+            if (result.Success)
+                return Ok(result);
+            else
+                return BadRequest(result);
+        }
 
     }
 }

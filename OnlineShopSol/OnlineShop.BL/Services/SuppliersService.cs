@@ -5,6 +5,7 @@ using OnlineShop.BL.Dtos.Suppliers;
 using OnlineShop.BL.Models;
 using OnlineShop.DAL.Entities;
 using OnlineShop.DAL.Interfaces;
+using OnlineShop.DAL.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,32 @@ namespace OnlineShop.BL.Services
 
         public ServiceResult DeleteSuppliers(SuppliersRemoveDto removeDto)
         {
-            throw new NotImplementedException();
+            ServiceResult result = new ServiceResult();
+            try 
+            {
+                Suppliers suppliersToRemove = this.suppliersRepository.Get(removeDto.SupplierId);
+                suppliersToRemove.Deleted = removeDto.Deleted;
+                suppliersToRemove.Delete_Date = removeDto.Delete_Date;
+                suppliersToRemove.Delete_User = removeDto.Delete_User;
+
+                this.suppliersRepository.Delete(suppliersToRemove);
+                result.Message = "El suplidor ha sido borrado";
+                result.Success = true;
+                this.suppliersRepository.SaveChange();
+            }
+            catch (ISuppliersException sdex) 
+            {
+                result.Message = sdex.Message;
+                result.Success = false;
+                this.logger.LogError(sdex.Message, sdex.ToString());
+            }
+            catch (Exception ex)
+            {
+                result.Message = "Ha ocurrido un error al remover el suplidor";
+                result.Success = false;
+                this.logger.LogError($" {result.Message} ", ex.ToString());
+            }
+            return result;
         }
 
         public ServiceResult GetAll()
@@ -90,7 +116,13 @@ namespace OnlineShop.BL.Services
                 result.Data = supplier;
                 result.Success = true;
             }
-            catch(Exception ex ) 
+            catch (ISuppliersException sdex)
+            {
+                result.Message = sdex.Message;
+                result.Success = false;
+                this.logger.LogError(sdex.Message, sdex.ToString());
+            }
+            catch (Exception ex ) 
             {
                 result.Message = "Ha ocurrido un error al obtener el suplidor";
                 result.Success = false;
@@ -101,12 +133,73 @@ namespace OnlineShop.BL.Services
 
         public ServiceResult SaveSupplier(SuppliersSaveDto saveDto)
         {
-            throw new NotImplementedException();
+           ServiceResult result = new ServiceResult();
+            try
+            {
+                Suppliers supplier = new Suppliers()
+                {
+                    Creation_Date = saveDto.Creation_Date,
+                    Creation_User = saveDto.Creation_User,
+                    CompanyName = saveDto.CompanyName,
+                    ContactName = saveDto.ContactName,
+                    ContactTitle = saveDto.ContactTitle,
+                    Address = saveDto.Address,
+                    City = saveDto.City,
+                    Region = saveDto.Region,
+                    PostalCode = saveDto.PostalCode,
+                    Country = saveDto.Country,
+                    Phone = saveDto.Phone,
+                    Fax = saveDto.Fax
+                };
+
+                this.suppliersRepository.Save(supplier);
+                result.Message = "El suplidor ha sido Agregado";
+                result.Success = true;
+                this.suppliersRepository.SaveChange();
+            }
+            catch (ISuppliersException sdex)
+            {
+                result.Message = sdex.Message;
+                result.Success = false;
+                this.logger.LogError(sdex.Message, sdex.ToString());
+            }
+            catch (Exception ex)
+            {
+                result.Message = "Ha ocurrido un error al guardar el suplidor";
+                result.Success = false;
+                this.logger.LogError($" {result.Message} ", ex.ToString());
+            }
+
+            return result;
         }
 
         public ServiceResult UpdateSupplier(SuppliersUpdateDto updateDto)
         {
-            throw new NotImplementedException();
+            ServiceResult result = new ServiceResult();
+            try
+            {
+                Suppliers suppliersToUpdate = this.suppliersRepository.Get(updateDto.SupplierId);
+                suppliersToUpdate.Modify_Date = updateDto.Modify_Date;
+                suppliersToUpdate.Modify_User = updateDto.Modify_User;
+
+                this.suppliersRepository.Update(suppliersToUpdate);
+                result.Message = "El suplidor ha sido actualizado";
+                result.Success = true;
+                this.suppliersRepository.SaveChange();   
+            }
+            catch (ISuppliersException sdex)
+            {
+                result.Message = sdex.Message;
+                result.Success = false;
+                this.logger.LogError(sdex.Message, sdex.ToString());
+            }
+            catch (Exception ex)
+            {
+                result.Message = "Ha ocurrido un error al actualizar el suplidor";
+                result.Success = false;
+                this.logger.LogError($" {result.Message} ", ex.ToString());
+            }
+            return result;
         }
     }
 }

@@ -6,6 +6,7 @@ namespace OnlineShop.BL.Dtos.Suppliers
 {
     public class SuppliersSaveDto
     {
+        
         public string CompanyName { get; set; }
         public string ContactName { get; set; }
         public string ContactTitle { get; set; }
@@ -18,6 +19,6 @@ namespace OnlineShop.BL.Dtos.Suppliers
         public string? Fax { get; set; }
 
         public int Creation_User { get; set; }
-        public DateTime? Creation_Date { get; set; }
+        public DateTime Creation_Date { get; set; }
     }
 }
