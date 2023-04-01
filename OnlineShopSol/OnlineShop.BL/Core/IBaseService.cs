@@ -4,7 +4,9 @@ using System.Text;
 
 namespace OnlineShop.BL.Core
 {
-    internal class IBaseService
+    public interface IBaseService
     {
+        ServiceResult GetAll();
+        ServiceResult GetById(int Id);
     }
 }

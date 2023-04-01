@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OnlineShop.BL.Contract;
 using OnlineShop.DAL.Entities;
 using OnlineShop.DAL.Interfaces;
 using OnlineShop.DAL.Model;
@@ -11,53 +12,57 @@ namespace OnlineShop.Api.Controllers
     [ApiController]
     public class SuppliersController : ControllerBase
     {
-        private readonly ISuppliersRepository _suppliersRepository;
-        public SuppliersController(ISuppliersRepository suppliersRepository)
+        private readonly ISupplierService supplierService;
+        public SuppliersController(ISupplierService supplierService)
         {
-            _suppliersRepository = suppliersRepository;
+            this.supplierService = supplierService;
         }
 
         // GET: api/<SuppliersController>
         [HttpGet]
         public IActionResult Get()
         {
-            var suppliers = _suppliersRepository.GetEntities();
+            var result = this.supplierService.GetAll();
 
-            return Ok(suppliers);
+            return Ok(result);
         }
 
         // GET api/<SuppliersController>/5
         [HttpGet("{id}")]
         public IActionResult GetEntity(int id)
         {
-            var supplier = _suppliersRepository.Get(id);
-            return Ok(supplier);
+            var result = this.supplierService.GetById(id);
+            
+            if (result.Success) 
+                return Ok(result);
+            else
+                return BadRequest(result);
         }
 
         // POST api/<SuppliersController>
-        [HttpPost("SaveSuppliers")]
+        /*[HttpPost("SaveSuppliers")]
         public IActionResult Post([FromBody] Suppliers suppliers)
         {
-            _suppliersRepository.Save(suppliers);
+            this.supplierService.SaveSupplier();
             return Ok();
-        }
+        }*/
 
         // PUT api/<SuppliersController>/5
-        [HttpPut("UpdateSuppliers")]
+        /*[HttpPut("UpdateSuppliers")]
         public IActionResult Put([FromBody] Suppliers suppliers)
         {
-            _suppliersRepository.Update(suppliers);
+            this.supplierService.UpdateSupplier(suppliers);
             return Ok();
-        }
+        }*/
 
 
         // DELETE api/<SuppliersController>/5
-        [HttpPost("DeleteSuppliers")]
-        public IActionResult Remove([FromBody] Suppliers suppliers)
+        /*[HttpPost("DeleteSuppliers")]
+        public IActionResult RemoveSupplier([FromBody] Suppliers suppliers)
         {
-            _suppliersRepository.Delete(suppliers);
+            this.supplierService.DeleteSuppliers(suppliers);
             return Ok();
-        }
+        }*/
 
     }
 }

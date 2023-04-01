@@ -11,7 +11,7 @@ namespace OnlineShop.DAL.Core
         }
 
         public int Creation_User { get; set; }
-        public DateTime? Creation_Date { get; set;}
+        public DateTime Creation_Date { get; set;}
         public int? Modify_User { get; set; }
         public DateTime? Modify_Date { get; set; }
         public int? Delete_User { get; set; }

@@ -59,3 +59,5 @@ C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\obj\Debug\net7.0\refint\Onli
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\obj\Debug\net7.0\OnlineShop.Api.pdb
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\obj\Debug\net7.0\OnlineShop.Api.genruntimeconfig.cache
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\obj\Debug\net7.0\ref\OnlineShop.Api.dll
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\bin\Debug\net7.0\OnlineShop.BL.dll
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\bin\Debug\net7.0\OnlineShop.BL.pdb

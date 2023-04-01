@@ -1,6 +1,7 @@
 ﻿
 
 using OnlineShop.DAL.Core;
+using System;
 
 namespace OnlineShop.DAL.Entities
 {
@@ -17,5 +18,6 @@ namespace OnlineShop.DAL.Entities
         public string Country { get; set; }
         public string Phone { get; set; }
         public string? Fax { get; set; }
+        public DateTime Creation_Date { get; set; }
     }
 }

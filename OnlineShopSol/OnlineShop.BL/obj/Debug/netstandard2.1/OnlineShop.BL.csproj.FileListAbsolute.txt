@@ -8,3 +8,6 @@ C:\projects\OnlineShop\OnlineShopSol\OnlineShop.BL\obj\Debug\netstandard2.1\Onli
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.BL\obj\Debug\netstandard2.1\OnlineShop.BL.csproj.CoreCompileInputs.cache
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.BL\obj\Debug\netstandard2.1\OnlineShop.BL.dll
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.BL\obj\Debug\netstandard2.1\OnlineShop.BL.pdb
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.BL\bin\Debug\netstandard2.1\OnlineShop.DAL.dll
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.BL\bin\Debug\netstandard2.1\OnlineShop.DAL.pdb
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.BL\obj\Debug\netstandard2.1\OnlineShop.BL.csproj.CopyComplete

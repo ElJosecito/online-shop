@@ -1779,6 +1779,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "OnlineShop.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "OnlineShop.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineShop.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineShop.BL.dll": {}
+        }
+      },
       "OnlineShop.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -6306,6 +6319,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "OnlineShop.BL/1.0.0": {
+      "type": "project",
+      "path": "../OnlineShop.BL/OnlineShop.BL.csproj",
+      "msbuildProject": "../OnlineShop.BL/OnlineShop.BL.csproj"
+    },
     "OnlineShop.DAL/1.0.0": {
       "type": "project",
       "path": "../OnlineShop.DAL/OnlineShop.DAL.csproj",
@@ -6316,6 +6334,7 @@
     "net7.0": [
       "Microsoft.EntityFrameworkCore >= 3.1.32",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.32",
+      "OnlineShop.BL >= 1.0.0",
       "OnlineShop.DAL >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -6353,6 +6372,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.BL\\OnlineShop.BL.csproj": {
+              "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.BL\\OnlineShop.BL.csproj"
+            },
             "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {
               "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj"
             }
