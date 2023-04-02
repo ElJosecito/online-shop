@@ -7,10 +7,10 @@ namespace OnlineShop.DAL.Interfaces
 {
     public interface IProductionRepository
     {
-    void Add(Production production);
-    void Update(Production production);
-    List<Production> GetEntities();
-    Suppliers GetEntity(int ID);
-    void Delete(Production production);
-}
+        void Add(Production production);
+        void Update(Production production);
+        List<Production> GetEntities();
+        Suppliers GetEntity(int ID);
+        void Delete(Production production);
+    }
 }

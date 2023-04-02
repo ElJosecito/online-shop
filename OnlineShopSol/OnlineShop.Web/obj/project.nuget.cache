@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GYBZTTkQ16mxRuJXG5/8eh7UsEifx1rEV6QdLOR0fiNMGBWAYPC7W9Pc2QE1LMT6k0U5cNh26AGMZD9gd5SBSg==",
+  "dgSpecHash": "wx9kyReuf2e8UHv+/2faaOfExBh+g7akmPeckPtFoEUKcKl7btODdY6uC7TQMdkSFX/3ztdnKYeWqhbwW0M7UA==",
   "success": true,
   "projectFilePath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Web\\OnlineShop.Web.csproj",
   "expectedPackageFiles": [
@@ -151,7 +151,11 @@
     "C:\\Users\\franc\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\franc\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\franc\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\franc\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.15\\microsoft.windowsdesktop.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\franc\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.15\\microsoft.netcore.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\franc\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.15\\microsoft.aspnetcore.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\franc\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.15\\microsoft.netcore.app.host.win-x64.6.0.15.nupkg.sha512"
   ],
   "logs": []
 }
