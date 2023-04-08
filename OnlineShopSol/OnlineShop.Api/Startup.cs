@@ -30,12 +30,11 @@ namespace OnlineShop.Api
         public void ConfigureServices(IServiceCollection services)
         {
 
-            //Context
+             //Context
             services.AddDbContext<ShopContext>(options => options.UseSqlServer(this.Configuration.GetConnectionString("ShopContext")));
 
             //Repositories
-            services.AddTransient<ISuppliersRepository, SuppliersRepositories>();
-
+            services.AddTransient<ISuppliersRepository, SuppliersRepository>();
 
             //App Services
             services.AddControllers();
@@ -43,6 +42,8 @@ namespace OnlineShop.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "OnlineShop.API", Version = "v1" });
             });
+
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

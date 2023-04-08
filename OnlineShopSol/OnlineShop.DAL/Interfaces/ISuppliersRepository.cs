@@ -8,6 +8,6 @@ namespace OnlineShop.DAL.Interfaces
 {
     public interface ISuppliersRepository : Core.IRepositoryBase<Suppliers>
     {
-
+        object GetEntity(int id);
     }
 }

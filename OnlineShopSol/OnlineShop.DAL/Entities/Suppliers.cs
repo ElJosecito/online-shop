@@ -15,5 +15,6 @@ namespace OnlineShop.DAL.Entities
         public string Country { get; set; }
         public string Phone { get; set; }
         public string? Fax { get; set; }
+        public bool Deleted { get; internal set; }
     }
 }

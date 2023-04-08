@@ -1,67 +1,66 @@
 ﻿
-
 using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Logging;
 using OnlineShop.DAL.Context;
 using OnlineShop.DAL.Entities;
-using OnlineShop.DAL.Exceptions;
 using OnlineShop.DAL.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using OnlineShop.DAL.Exceptions;
 
 namespace OnlineShop.DAL.Repositories
 {
-    public class SuppliersRepositories : ISuppliersRepository
+    public class SuppliersRepository : Core.RepositoryBase<Suppliers>, ISuppliersRepository
     {
-        private readonly  ShopContext context;
-        private readonly ILogger<SuppliersRepositories> logger;
-        public SuppliersRepositories(ShopContext context, ILogger<SuppliersRepositories> Logger) 
+
+        private readonly ShopContext shopContext;
+        private readonly ILogger<SuppliersRepository> _logger;
+
+        public SuppliersRepository(ShopContext shopContext, ILogger<SuppliersRepository> logger) : base(shopContext)
         {
-            this.context = context;
-            this.logger = Logger;
+            this.shopContext = shopContext;
+            _logger = logger;
         }
-        public void Add(Suppliers suppliers)
+
+        public override void Save(Suppliers entity)
         {
-            try 
+            if (string.IsNullOrEmpty(entity.CompanyName))
             {
-                if(this.context.Suppliers.Any(cd => cd.SupplierId == suppliers.SupplierId))
-                {
-                    throw new ISuppliersException("El Supplier Ya existe");
-                }
-
-                this.context.Suppliers.Add(suppliers);
-                this.context.SaveChanges();
+                throw new ISuppliersException("El nombre de la compañia es requerido");
             }
-            catch (ISuppliersException ex)
-            {
-                this.logger.LogError($"ocurrio un error {ex.Message}", ex.ToString());
-            }
+
+            base.Save(entity);
+            base.SaveChange();
         }
 
-        public void Delete(Suppliers suppliers)
+        public override void Delete(Suppliers entity)
+        {
+            base.Delete(entity);
+            base.SaveChange();
+
+        }
+
+        public override void Update(Suppliers entity)
+        {
+            base.Update(entity);
+            base.SaveChange();
+
+        }
+
+        public override List<Suppliers> GetEntities()
+        {
+            return this.shopContext.Suppliers.Where(cd => !cd.Deleted).ToList();
+        }
+
+        public override Suppliers Get(int id)
+        {
+            return this.shopContext.Suppliers.FirstOrDefault(cd => cd.SupplierId == id && !cd.Deleted);
+        }
+
+        public object GetEntity(int id)
         {
             throw new System.NotImplementedException();
         }
-
-        public List<Suppliers> GetAll()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Suppliers GetById(int idSuppliers)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public List<Suppliers> GetEntities()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Suppliers GetEntity(int idSuppliers)
-        {
-            throw new System.NotImplementedException();
-        }
-
     }
 }

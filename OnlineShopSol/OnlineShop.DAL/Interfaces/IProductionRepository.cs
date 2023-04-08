@@ -12,5 +12,6 @@ namespace OnlineShop.DAL.Interfaces
         List<Production> GetEntities();
         Suppliers GetEntity(int ID);
         void Delete(Production production);
+        object Get(int id);
     }
 }
