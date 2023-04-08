@@ -63,9 +63,5 @@ namespace OnlineShop.DAL.Repositories
             throw new System.NotImplementedException();
         }
 
-        public void Update(Suppliers suppliers)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }
