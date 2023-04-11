@@ -66,7 +66,7 @@ namespace OnlineShop.Api.Controllers
 
 
         // DELETE api/<SuppliersController>/5
-        [HttpPost("DeleteSuppliers")]
+        [HttpPut("DeleteSuppliers")]
         public IActionResult RemoveSupplier([FromBody] SuppliersRemoveDto suppliersRemoveDto)
         {
             var result = this.supplierService.DeleteSuppliers(suppliersRemoveDto);

@@ -8,6 +8,10 @@ using OnlineShop.DAL.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
+{
+    build.WithOrigins("http://127.0.0.1:5173").AllowAnyMethod().AllowAnyHeader();
+}));
 
 
 //Context
@@ -35,6 +39,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("corspolicy");
 
 app.UseHttpsRedirection();
 

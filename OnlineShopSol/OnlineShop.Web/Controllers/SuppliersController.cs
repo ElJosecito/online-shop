@@ -1,34 +1,59 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using OnlineShop.Web.Models;
+using OnlineShop.Web.Models.Response;
 using System.Collections.Generic;
+
 
 namespace OnlineShop.Web.Controllers
 {
     public class SuppliersController : Controller
     {
-        // GET: SuppliersController
-        public ActionResult Index()
-        {
-            List<SuppliersModel> suppliers = new List<SuppliersModel>() 
-            {
-                new SuppliersModel()
-                {
-                    SupplierID = 1,
-                    CompanyName = "Uncanny",
-                    ContactName = "Jose",
-                    ContactTitle = "Lider",
-                    Address = "SomePlace In Neverland",
-                    City = "Neverland",
-                    Region = "Este",
-                    PostalCode = "22000",
-                    Country = "EveryWhere",
-                    Phone = "809-123-1234",
-                    Fax = "Uncanny@gmail.com"
-                }
-            };
+        HttpClientHandler handler = new HttpClientHandler();
+        private readonly ILogger<SuppliersController> logger;
+        private readonly IConfiguration configuration;
 
-            return View(suppliers);
+        public SuppliersController(ILogger<SuppliersController> logger, IConfiguration configuration)
+        {
+            this.logger = logger;
+            this.configuration = configuration;
+        }
+
+
+        // GET: SuppliersController
+        public async Task<ActionResult> Index()
+        {
+            SuppliersListResponse suppliersList = new SuppliersListResponse();
+
+            try
+            {
+                using (var HttpClient = new HttpClient(this.handler))
+                {
+                    var response = await HttpClient.GetAsync("https://localhost:7222/api/Suppliers");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResult = await response.Content.ReadAsStringAsync();
+
+                       
+                            suppliersList = JsonConvert.DeserializeObject<SuppliersListResponse>(apiResult);
+                        
+                    }
+                    else
+                    {
+
+                    }
+                }
+
+                return View(suppliersList.data);
+            }
+            catch(Exception ex) 
+            {
+                this.logger.LogError("Error al obtener los suplidores.", ex.ToString());
+            }
+
+           return View();
         }
 
         // GET: SuppliersController/Details/5
@@ -79,25 +104,6 @@ namespace OnlineShop.Web.Controllers
             }
         }
 
-        // GET: SuppliersController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: SuppliersController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        
     }
 }
