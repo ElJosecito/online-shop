@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cdtWEhdiwV+lQd0PbJiGEnOvpK5mrSv7/YbtNG3cCqIEM+7Eja6y9rFAOVut/y39yr/XbajVaFWLZU+hC8bzmQ==",
+  "dgSpecHash": "LOH2MDKBFPziflPjzMB4zjWBBnez20GqtWFpCSUStNfYYJVNQTjeReUxjLsGmdYICrHFBrRQHtq5TFs2bfrAVQ==",
   "success": true,
-  "projectFilePath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj",
+  "projectFilePath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arnold\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Arnold\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

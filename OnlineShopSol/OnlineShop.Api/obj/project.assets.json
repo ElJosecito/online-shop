@@ -729,11 +729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj",
+      "projectUniqueName": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj",
       "projectName": "OnlineShop.Api",
-      "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj",
+      "projectPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj",
       "packagesPath": "C:\\Users\\Arnold\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Api\\obj\\",
+      "outputPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Arnold\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -750,8 +750,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {
-              "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj"
+            "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {
+              "projectPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj"
             }
           }
         }

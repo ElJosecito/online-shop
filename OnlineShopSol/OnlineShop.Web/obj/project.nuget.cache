@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ozp9BwuFB9RjeUmRk3JSJ1PmdEcxVq+D3gLQOyJn0s5JuJXmuaGsBk4HKl4MCasW3khbK71wFGgUWlGvIS/OQg==",
+  "dgSpecHash": "7sj/AzkIe05hd+/9/CHpbfNUUhjxI5QVQEqBU24hapfpOZxlMx9EzzdPyAA9bTG4Y6zOCnklpwQrY4svsxlAWA==",
   "success": true,
-  "projectFilePath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Web\\OnlineShop.Web.csproj",
+  "projectFilePath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.Web\\OnlineShop.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arnold\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Arnold\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

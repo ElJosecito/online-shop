@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace OnlineShop.DAL.Model
 {
-    internal class CategoriesModel
+    public class CategoriesModel
     {
+        public int categoryid { get; set; }
+        public string categoryname { get; set; }
+        public string description { get; set; }
     }
 }

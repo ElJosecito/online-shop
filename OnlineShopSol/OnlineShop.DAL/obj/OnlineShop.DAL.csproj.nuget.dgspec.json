@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {}
+    "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {}
   },
   "projects": {
-    "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {
+    "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj",
+        "projectUniqueName": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj",
         "projectName": "OnlineShop.DAL",
-        "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj",
+        "projectPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj",
         "packagesPath": "C:\\Users\\Arnold\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\obj\\",
+        "outputPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Arnold\\AppData\\Roaming\\NuGet\\NuGet.Config",

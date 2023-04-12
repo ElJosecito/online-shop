@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.SL\\OnlineShop.SL.csproj": {}
+    "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.SL\\OnlineShop.SL.csproj": {}
   },
   "projects": {
-    "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.SL\\OnlineShop.SL.csproj": {
+    "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.SL\\OnlineShop.SL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.SL\\OnlineShop.SL.csproj",
+        "projectUniqueName": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.SL\\OnlineShop.SL.csproj",
         "projectName": "OnlineShop.SL",
-        "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.SL\\OnlineShop.SL.csproj",
+        "projectPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.SL\\OnlineShop.SL.csproj",
         "packagesPath": "C:\\Users\\Arnold\\.nuget\\packages\\",
         "outputPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.SL\\obj\\",
         "projectStyle": "PackageReference",
