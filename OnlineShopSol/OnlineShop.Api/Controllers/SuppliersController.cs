@@ -53,7 +53,7 @@ namespace OnlineShop.Api.Controllers
         }
 
         // PUT api/<SuppliersController>/5
-        [HttpPut("UpdateSuppliers")]
+        [HttpPost("UpdateSuppliers")]
         public IActionResult Put([FromBody] SuppliersUpdateDto suppliersUpdateDto)
         {
             var result = this.supplierService.UpdateSupplier(suppliersUpdateDto);
