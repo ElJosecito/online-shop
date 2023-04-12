@@ -15,7 +15,9 @@ namespace OnlineShop.BL.Services
     public class ProductionServices : IProductionService
     {
 
+#pragma warning disable CS0169 // El campo 'ProductionServices._logger' nunca se usa
         private readonly ILogger _logger;
+#pragma warning restore CS0169 // El campo 'ProductionServices._logger' nunca se usa
         private readonly IProductionRepository productionRepository;
         private ILogger<ProductionServices> logger;
 
@@ -70,18 +72,19 @@ namespace OnlineShop.BL.Services
 
                 ProductionResultModel productionResultModel = new ProductionResultModel()
                 {
-                    ProductionId = productionResultModel.ProductionId,
-                    Name = productionResultModel.Name,
-                    supplierId = productionResultModel.supplierid,
-                    categoryId = productionResultModel.categoryid,
-                    unitprice = productionResultModel.unitprice,
-                    discontinued = productionResultModel.discontinued,
-                    Creation_Date = productionResultModel.Creation_Date
+                  /*  ProductionId = production.ProductionId,
+                    Name = production.Name,
+                    categoryId = production.categoryid,
+                    unitprice = production.unitprice,
+                    discontinued = production.discontinued,
+                    Creation_Date = production.Creation_Date*/
                 };
 
                 result.Data = production;
                 result.Success = true;
             }
+
+
             
             catch (Exception ex)
             {

@@ -21,6 +21,11 @@ namespace OnlineShop.DAL.Repositories
             this.logger = Logger;
         }
 
+        public object Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         void IProductionRepository.Add(Production production)
         {
             try

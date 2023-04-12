@@ -59,3 +59,5 @@ C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\obj\Debug\net6.0\staticwebas
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.OnlineShop.Api.props
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.OnlineShop.Api.props
 C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\obj\Debug\net6.0\staticwebassets.pack.json
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\bin\Debug\net6.0\OnlineShop.BL.dll
+C:\projects\OnlineShop\OnlineShopSol\OnlineShop.Api\bin\Debug\net6.0\OnlineShop.BL.pdb
