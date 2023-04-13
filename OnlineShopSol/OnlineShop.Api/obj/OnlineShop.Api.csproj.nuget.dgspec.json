@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj": {}
+    "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj": {}
   },
   "projects": {
-    "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj": {
+    "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj",
+        "projectUniqueName": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj",
         "projectName": "OnlineShop.Api",
-        "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj",
-        "packagesPath": "C:\\Users\\iblxs\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Api\\obj\\",
+        "projectPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.Api\\OnlineShop.Api.csproj",
+        "packagesPath": "C:\\Users\\Arnold\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Visual Studio\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\iblxs\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Arnold\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {
-                "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj"
+              "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {
+                "projectPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj"
               }
             }
           }
@@ -48,20 +43,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.32, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.32, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.5.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -73,33 +54,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {
+    "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj",
+        "projectUniqueName": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj",
         "projectName": "OnlineShop.DAL",
-        "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj",
-        "packagesPath": "C:\\Users\\iblxs\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.DAL\\obj\\",
+        "projectPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\OnlineShop.DAL.csproj",
+        "packagesPath": "C:\\Users\\Arnold\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\onlineShop\\OnlineShopSol\\OnlineShop.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Visual Studio\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\iblxs\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Arnold\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,7 +76,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -147,7 +115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
