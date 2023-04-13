@@ -1,6 +1,4 @@
-﻿
-
-using OnlineShop.DAL.Core;
+﻿using OnlineShop.DAL.Core;
 
 namespace OnlineShop.DAL.Entities
 {

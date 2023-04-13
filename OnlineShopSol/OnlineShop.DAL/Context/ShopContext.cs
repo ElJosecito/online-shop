@@ -20,6 +20,9 @@ namespace OnlineShop.DAL.Context
         public DbSet<Suppliers> Suppliers { get; set; }
         #endregion
 
+        #region "Registros"
+        public DbSet<Categories> Categories{ get; set; }
+        #endregion
 
         public DbSet<Production> Production { get; set; }
 
@@ -28,7 +31,13 @@ namespace OnlineShop.DAL.Context
             modelBuilder.Entity<Suppliers>()
                 .HasKey(c => c.SupplierId); // Agregar esta línea para definir la clave primaria
 
+            modelBuilder.Entity<Categories>()
+                .HasKey(c => c.categoryid); // Agregar esta línea para definir la clave primaria
+
             base.OnModelCreating(modelBuilder);
         }
+        //
+
+
     }
 }

@@ -12,6 +12,9 @@ builder.Services.AddDbContext<ShopContext>(options => options.UseSqlServer(build
 
 builder.Services.AddControllers();
 builder.Services.AddTransient<ISuppliersRepository, SuppliersRepository>();
+
+builder.Services.AddTransient<ICategoriesRepository, CategoriesRepository>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

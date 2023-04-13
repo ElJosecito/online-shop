@@ -9056,7 +9056,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Arnold\\.nuget\\packages\\": {}
+    "C:\\Users\\iblxs\\.nuget\\packages\\": {},
+    "E:\\Visual Studio\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -9064,11 +9065,15 @@
       "projectUniqueName": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Web\\OnlineShop.Web.csproj",
       "projectName": "OnlineShop.Web",
       "projectPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Web\\OnlineShop.Web.csproj",
-      "packagesPath": "C:\\Users\\Arnold\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\iblxs\\.nuget\\packages\\",
       "outputPath": "C:\\projects\\OnlineShop\\OnlineShopSol\\OnlineShop.Web\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\Visual Studio\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Arnold\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\iblxs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9076,6 +9081,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9118,7 +9124,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
