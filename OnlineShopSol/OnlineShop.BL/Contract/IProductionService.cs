@@ -6,7 +6,7 @@ using System.Text;
 
 namespace OnlineShop.BL.Contract
 {
-    internal interface IProductionService : IBaseService
+    public interface IProductionService : IBaseService
     {
         ServiceResult SaveProduction(ProductionSaveDto saveDto);
         ServiceResult UpdateProduction(ProductionUpdateDto updateDto);

@@ -13,5 +13,7 @@ namespace OnlineShop.DAL.Interfaces
         Suppliers GetEntity(int ID);
         void Delete(Production production);
         object Get(int id);
+        void SaveChange();
+        void Save(Production production);
     }
 }

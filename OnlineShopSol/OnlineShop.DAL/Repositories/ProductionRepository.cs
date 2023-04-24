@@ -26,11 +26,21 @@ namespace OnlineShop.DAL.Repositories
             throw new NotImplementedException();
         }
 
+        public void Save(Production production)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SaveChange()
+        {
+            throw new NotImplementedException();
+        }
+
         void IProductionRepository.Add(Production production)
         {
             try
             {
-                if (this.context.Production.Any(cd => cd.ID == production.ID))
+                if (this.context.Production.Any(cd => cd.ProductionID == production.ProductionID))
                 {
                     throw new IProductionException("El Producto Ya existe");
                 }
