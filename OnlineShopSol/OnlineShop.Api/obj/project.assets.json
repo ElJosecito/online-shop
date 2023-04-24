@@ -3947,7 +3947,7 @@
       },
       "OnlineShop.BL/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "OnlineShop.DAL": "1.0.0",
           "OnlineShop.Web": "1.0.0"

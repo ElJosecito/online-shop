@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Linq;
 
 namespace OnlineShop.BL.Services
 {
@@ -45,10 +46,10 @@ namespace OnlineShop.BL.Services
                 {
                     ProductionId = cd.ProductionId,
                     Name  = cd.Name,
-                    supplierId = cd.supplierid,
-                    categoryId = cd.categoryid,
-                    unitprice = cd.unitprice,
-                    discontinued = cd.discontinued,
+                    supplierId = cd.Supplierid,
+                    categoryId = cd.Categoryid,
+                    unitprice = cd.Unitprice,
+                    discontinued = cd.Discontinued,
                     Creation_Date = cd.Creation_Date
 
                 }).ToList();
@@ -76,14 +77,15 @@ namespace OnlineShop.BL.Services
 
                 ProductionResultModel productionResultModel = new ProductionResultModel()
                 {
-                    ProductionId = production.ProductionId,
-                    Name = production.Name,
-                    categoryId = production.categoryid,
-                    unitprice = production.unitprice,
-                    discontinued = production.discontinued,
-                    Creation_Date = production.Creation_Date
-               
-            };
+                   ProductionId = Id,
+                    /* Name = production.Name,
+                     supplierId = production.Supplierid,
+                     categoryId = production.Categoryid,
+                     unitprice = cd.Unitprice,
+                     discontinued = cd.Discontinued,
+                     Creation_Date = cd.Creation_Date*/
+
+                };
                   
 
                 result.Data = production;
@@ -108,7 +110,7 @@ namespace OnlineShop.BL.Services
             {
                 Production production = new Production()
                 {
-                  Creation_Date = saveDto.Creation_Date,
+                 /* Creation_Date = saveDto.Creation_Date,
                     Creation_User = saveDto.Creation_User,
                     Name = saveDto.Name,
 
@@ -117,7 +119,7 @@ namespace OnlineShop.BL.Services
                     categoryid = saveDto.categoryid,
                     unitprice = saveDto.unitprice,
                     discontinued = saveDto.discontinued,
-
+                 */
 
                 };
 
@@ -126,7 +128,7 @@ namespace OnlineShop.BL.Services
                 result.Success = true;
                 this.productionRepository.SaveChange();
             }
-            catch (IProductionEx sdex)
+            catch (IProductionException sdex)
             {
                 result.Message = sdex.Message;
                 result.Success = false;

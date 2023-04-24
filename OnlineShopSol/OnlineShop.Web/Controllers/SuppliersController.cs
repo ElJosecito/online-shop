@@ -16,7 +16,7 @@ namespace OnlineShop.Web.Controllers
                 {
                     SupplierID = 1,
                     CompanyName = "Uncanny",
-                    ContactName = "Jose",
+                    ContactName = "Elian",
                     ContactTitle = "Lider",
                     Address = "SomePlace In Neverland",
                     City = "Neverland",
