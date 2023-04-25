@@ -6,9 +6,7 @@ using System.Text;
 
 namespace OnlineShop.Web.Controllers
 {
-    namespace OnlineShop.Web.Controllers
-    {
-        public class SuppliersController : Controller
+              public class SuppliersController : Controller
         {
             HttpClientHandler handler = new HttpClientHandler();
             private readonly ILogger<SuppliersController> logger;
